@@ -1,0 +1,67 @@
+.panel-one {
+    background-image:url("../img/Snow-PNG-Transparent-Image.png");
+}
+
+.panel-two {
+    background-image:url("../img/photo-1551009175-8a68da93d5f9.jfif");
+}
+
+
+.panel-three {
+    background-image:url("../img/photo-1558979158-65a1eaa08691.jfif");
+}
+
+
+.panel-four {
+    background-image:url("../img/photo-1572276596237-5db2c3e16c5d.jfif");
+}
+
+.panel-five{
+    background-image:url("../img/photo-1507525428034-b723cf961d3e.jfif");
+}
+
+.container{
+    display:flex;
+    width:90vw;
+}
+
+.panel{
+    background-size:cover;
+    background-position:center;
+    height: 80vh;
+    border-radius: 50px;
+    color:#fff;
+    cursor:pointer;
+    flex:.1;
+    margin:10px;
+    position:relative;
+    transition:flex .7s case-in;
+}
+
+.panel h3 {
+    font-size:24px;
+    position:absolute;;
+    bottom:20px;
+    left:20px; 
+    margin:0;
+    opacity:0;
+}
+
+.panel.active{
+    flex:5px;
+}
+
+.panel.active h3{
+    opacity:1;
+}
+
+@media(max-width:500px){
+    .container{
+        width:100vw;
+    }
+    .panel:nth-of-type(3),
+    .panel:nth-of-type(4)
+    {
+        display:none;
+    }
+}
